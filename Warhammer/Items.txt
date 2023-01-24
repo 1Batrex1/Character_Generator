@@ -1,0 +1,65 @@
+Bukłak ;8s ;1/100 ; duża
+Flaszka ;4s ;10 ;duża
+Juki ;2zk ;5 ;mała
+Kuferek ;5zk ;40 ;mała
+Manierka metalowa ;2zk ;15 ;sporadyczna
+Manierka skórzana ;15s ;5 ;mała
+Mieszek ;2s ;1 ;duża
+Plecak ;30s ;20 ;duża
+Sakiewka ;5s ;1 ;duża
+Tobołek ;2zk ;5 ;mała
+Tuba na mapy/pergaminy ;1zk ;2 ;sporadyczna
+Worek ;5s ;7 ;duża
+Drewno na opał ;2s ;5 ;duża
+Kaganek ;5s ;20 ;duża
+Latarnia ;5zk ;20 ;mała
+Latarnia sztormowa ;12zk ;30 ;sporadyczna
+Olej do latarni ;5s ;5 ;duża
+Pochodnia ;5p ;5 ;duża
+Świeczka łojowa ;3s ;5 ;duża
+Świeczka woskowa ;6s ;5 ;mała
+Zapałka ;1p ;/ ;mała
+Drabina ;10s ;50 ;przeciętna
+Hubka i krzesiwo ;30s ;5 ;duża
+Imbryk ;30s ;10 ;duża
+Instrument muzyczny ;5zk ;5 ;przeciętna
+Kłódka dobrej jakości ;10zk ;5 ;sporadyczna
+Kłódka zwykłej jakości ;1zk ;5 ;przeciętna
+Koc ;25s ;10 ;duża
+Kociołek ;1zk ;20 ;duża
+Kości do gry ;6s ;/ ;duża
+Kufel drewniany ;10s ;5 ;duża
+Kufel ze szkła barwionego ;1zk ;5 ;duża
+Lina ;1zk ;50 ;przeciętna
+Luneta ;100zk ;5 ;rzadka
+Lustro ;10zk ;5 ;rzadka
+Namiot ;15s ;20 ;przeciętna
+Papier ;1s ;/ ;znikoma
+Perfumy ;1zk ;/ ;przeciętna
+Pergamin ;5s ;/ ;rzadka
+Symbol religijny ;1zk ;5 ;przeciętna
+Sztućce drewniane ;5s ;2 ;duża
+Sztućce metalowe ;3zk ;4 ;przeciętna
+Sztućne srebrne ;15zk ;3 ;sporadyczna
+Talia kart ;1zk ;1 ;duża
+Drąg (metr) ;1s ;10; duża
+Drewniany klin ;8p ;2 ;duża
+Haczyk na ryby i żyłka ;3s ;2 ;przeciętna
+Kajdany ;5zk ;20 ;mała
+Kilof ;25s ;20 ;mała
+Kołki ;5s ;5 przeciętna
+Kotwiczka do wspinaczki ;4zk ;20 ;mała
+Książka drukowana ;100zk ;35 ;znikoma
+Książka ilustrowana ;350zk ;50 ;znikoma
+Liczydło ;10zk ;5 ;rzadka
+Łańcuch (metr) ;30s ;5 ;rzadka
+Łom ;10s ;10 ;przeciętna
+Łopata ;25s ;20 ;przeciętna
+Młot ;20s ;40 ;przeciętna
+Narzędzia ;50zk ;50+ ;mała
+Potrzask ;1s ;2 ;przeciętna
+Przybory do pisania ;10zk ;5 ;mała
+Sztaba metalu ;25s ;20 ;mała
+Wnyki ;2zk ;20 ;przeciętna
+Wytrychy ;10zk ;20 ;mała
+Zestaw do charakteryzacji ;5zk ;10 ;sporadyczna
