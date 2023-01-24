@@ -2,8 +2,7 @@ import random
 
 import Hero
 class SpecialTraits:
-    def __init__(self):
-        hero = Hero
+    def __init__(self, race):
 
         self.fightSkills = (20+random.randint(1,10)+random.randint(1,10))
         self.shootingSkills = (20+random.randint(1,10)+random.randint(1,10))
@@ -20,19 +19,19 @@ class SpecialTraits:
         self.attack = 1
         self.speed = 4
         self.hp = random.randint(1,10)
-        if(hero.race == "Elf"):
+        if(race == "Elf"):
             self.shootingSkills += 10
             self.agility += 10
             self.speed = 5
 
-        if (hero.race == "Krasnolód"):
+        if (race == "Krasnolód"):
             self.fightSkills += 10
             self.endurance += 10
             self.agility -= 10
             self.persuasion -= 10
             self.speed = 3
 
-        if (hero.race == "Niziołek"):
+        if (race == "Niziołek"):
             self.fightSkills -= 10
             self.shootingSkills += 10
             self.endurance -= 10
@@ -40,7 +39,7 @@ class SpecialTraits:
             self.agility += 10
             self.persuasion += 10
 
-        if (hero.race == "Człowiek"):
+        if (race == "Człowiek"):
             if (self.hp <= 3):
                 self.hp = 10
             elif (self.hp <= 6):
@@ -50,7 +49,7 @@ class SpecialTraits:
             else:
                 self.hp = 13
 
-        if (hero.race == "Elf"):
+        if (race == "Elf"):
             if (self.hp <= 3):
                 self.hp = 9
             elif (self.hp <= 6):
@@ -60,7 +59,7 @@ class SpecialTraits:
             else:
                 self.hp = 12
 
-        if (hero.race == "Krasnolód"):
+        if (race == "Krasnolód"):
             if (self.hp <= 3):
                 self.hp = 11
             elif (self.hp <= 6):
@@ -70,7 +69,7 @@ class SpecialTraits:
             else:
                 self.hp = 14
 
-        if (hero.race == "Niziołek"):
+        if (race == "Niziołek"):
             if (self.hp <= 3):
                 self.hp = 8
             elif (self.hp <= 6):
@@ -88,19 +87,19 @@ class SpecialTraits:
         self.crazyPoints = 0
         self.pp = random.randint(1,10)
 
-        if (hero.race == "Człowiek"):
+        if (race == "Człowiek"):
             if (self.pp <= 4):
                 self.pp = 2
             else:
                 self.pp = 3
 
-        if (hero.race == "Elf"):
+        if (race == "Elf"):
             if (self.pp <= 4):
                 self.pp = 1
             else:
                 self.pp = 2
 
-        if (hero.race == "Krasnolód"):
+        if (race == "Krasnolód"):
             if (self.pp <= 4):
                 self.pp = 1
             elif (self.pp <= 7):
@@ -108,7 +107,7 @@ class SpecialTraits:
             else:
                 self.pp = 3
 
-        if (hero.race == "Niziołek"):
+        if (race == "Niziołek"):
             if (self.pp <= 7):
                 self.pp = 2
             else:
