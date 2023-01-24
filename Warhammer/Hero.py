@@ -4,7 +4,27 @@ from Warhammer import CharacterDescription
 
 
 class hero:
+    class SpecialTraits:
+        def __init(self):
+            self.fightSkills = 0
+            self.shootingSkills = 0
+            self.sturdiness = 0
+            self.endurance = 0
+            self.agility = 0
 
+            self.intelligence = 0
+
+            self.willpower = 0
+
+            self.persuasion = 0
+            #pozostale traity
+            self.attack = 0
+            self.strength = 0
+            self.resilience = 0
+            self.speed = 0
+            self.magic = 0
+            self.crazyPoints = 0
+            self.destinyPoints = 0
 
     class Skill:
         def  __init__(self,n,s1,s2):
