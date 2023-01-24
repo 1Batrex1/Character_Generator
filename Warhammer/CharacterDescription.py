@@ -4,6 +4,113 @@ import random
 class CharacterDescription:
     def __init__(self, gender, race):
         age_rand = random.randint(1, 100)
+        waga_rand = random.randint(1, 100)
+        # losowanie wagi
+        if race == "Człowiek":
+            if waga_rand == 1:
+                self.waga = 50
+            elif waga_rand <= 10:
+                self.waga = 55
+            elif waga_rand <= 20:
+                self.waga = 60
+            elif waga_rand <= 30:
+                self.waga = 65
+            elif waga_rand <= 40:
+                self.waga = 70
+            elif waga_rand <= 50:
+                self.waga = 75
+            elif waga_rand <= 60:
+                self.waga = 80
+            elif waga_rand <= 70:
+                self.waga = 85
+            elif waga_rand <= 80:
+                self.waga = 90
+            elif waga_rand <= 90:
+                self.waga = 95
+            elif waga_rand <= 99:
+                self.waga = 100
+            else:
+                self.waga = 110
+
+            if race == "Elf":
+                if waga_rand == 1:
+                    self.waga = 40
+                elif waga_rand <= 10:
+                    self.waga = 45
+                elif waga_rand <= 20:
+                    self.waga = 50
+                elif waga_rand <= 30:
+                    self.waga = 55
+                elif waga_rand <= 40:
+                    self.waga = 60
+                elif waga_rand <= 50:
+                    self.waga = 65
+                elif waga_rand <= 60:
+                    self.waga = 70
+                elif waga_rand <= 70:
+                    self.waga = 75
+                elif waga_rand <= 80:
+                    self.waga = 80
+                elif waga_rand <= 90:
+                    self.waga = 85
+                elif waga_rand <= 99:
+                    self.waga = 90
+                else:
+                    self.waga = 95
+
+                if race == "Krasnolud":
+                    if waga_rand == 1:
+                        self.waga = 45
+                    elif waga_rand <= 10:
+                        self.waga = 50
+                    elif waga_rand <= 20:
+                        self.waga = 56
+                    elif waga_rand <= 30:
+                        self.waga = 60
+                    elif waga_rand <= 40:
+                        self.waga = 65
+                    elif waga_rand <= 50:
+                        self.waga = 70
+                    elif waga_rand <= 60:
+                        self.waga = 75
+                    elif waga_rand <= 70:
+                        self.waga = 80
+                    elif waga_rand <= 80:
+                        self.waga = 85
+                    elif waga_rand <= 90:
+                        self.waga = 90
+                    elif waga_rand <= 99:
+                        self.waga = 95
+                    else:
+                        self.waga = 100
+
+                if race == "Niziołek":
+                    if waga_rand == 1:
+                        self.waga = 35
+                    elif waga_rand <= 10:
+                        self.waga = 35
+                    elif waga_rand <= 20:
+                        self.waga = 40
+                    elif waga_rand <= 30:
+                        self.waga = 40
+                    elif waga_rand <= 40:
+                        self.waga = 45
+                    elif waga_rand <= 50:
+                        self.waga = 45
+                    elif waga_rand <= 60:
+                        self.waga = 50
+                    elif waga_rand <= 70:
+                        self.waga = 50
+                    elif waga_rand <= 80:
+                        self.waga = 55
+                    elif waga_rand <= 90:
+                        self.waga = 60
+                    elif waga_rand <= 99:
+                        self.waga = 65
+                    else:
+                        self.waga = 70
+
+
         # Losowanie wieku
         if race == "Człowiek":
             if age_rand <= 5:
