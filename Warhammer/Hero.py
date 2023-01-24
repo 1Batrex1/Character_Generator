@@ -11,21 +11,19 @@ class Hero:
         self.profession = profesion
         self.Chad = CharacterDescription(gender, self.race)
         self.st = SpecialTraits(self.race)
-        self.wep = Wep # Tabela Broni
+        self.wep = Wep  # Tabela Broni
         self.Ski = []  # Tabela skili
         self.Tal = []  # Tabela Talentów
         self.Eq = []  # Tabela eq
         self.Money = Money()
 
-
     def __str__(self):
         wep = ""
         for x in self.wep:
             wep += str(x)
-        return "=====================\nBohater\n=====================\nImię:" + self.name + "\nRasa:" +\
-            self.race + "\nProfesja:" + self.profession +\
-            "\n=====================\nOpis Bohatera\n=====================\n" + self.Chad.__str__() +\
-            "\n=====================\nCechy Specjalne\n=====================\n" +\
-            self.st.__str__()+"\n=====================\nBronie\n=====================\n" + wep +\
-            "=====================\nPieniądze\n=====================\n"  + self.Money.__str__()
-
+        return "=====================\nBohater\n=====================\nImię:" + self.name + "\nRasa:" + \
+            self.race + "\nProfesja:" + self.profession + \
+            "\n=====================\nOpis Bohatera\n=====================\n" + self.Chad.__str__() + \
+            "\n=====================\nCechy Specjalne\n=====================\n" + \
+            self.st.__str__() + "\n=====================\nBronie\n=====================\n" + wep + \
+            "=====================\nPieniądze\n=====================\n" + self.Money.__str__()
