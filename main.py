@@ -1,12 +1,11 @@
+import Warhammer.odczyt
 from Warhammer import *
-from PyQt6 import uic
-from PyQt6.QtWidgets import QApplication
 
-Form, Window = uic.loadUiType("maingui.ui")
+lista = Warhammer.odczyt.wczytywanie("D:\Studia\Programowanie\Python\Character_Generator\Warhammer\Weapons.txt")
 
-app = QApplication([])
-window = Window()
-form = Form()
-form.setupUi(window)
-window.show()
-app.exec()
+hero = Warhammer.Hero.hero("Bartek","Człowiek","Szlachcic","Mężczyzna","Cos","Cos","Cos",lista[0],lista[1])
+
+for x in hero.wep:
+        print(x)
+
+print(hero.st)

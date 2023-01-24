@@ -1,4 +1,4 @@
-from Weapon import Weapon
+from Warhammer.Weapon import Weapon
 def wczytywanie(filename):
     bronie = []
 
@@ -12,8 +12,4 @@ def wczytywanie(filename):
     return bronie
 
 
-def read():
-    objekt = wczytywanie("Weapons.txt")
-    for x in objekt:
-        print(x)
 
