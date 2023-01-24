@@ -1,5 +1,5 @@
 import random
-
+import math
 
 class SpecialTraits:
     def __init__(self, race):
@@ -81,8 +81,8 @@ class SpecialTraits:
 
         self.health = self.hp
 
-        self.strength = self.sturdiness / 10
-        self.resilience = self.endurance / 10
+        self.strength = math.trunc(self.sturdiness / 10)
+        self.resilience = math.trunc(self.endurance / 10)
         self.magic = 0
         self.crazyPoints = 0
         self.pp = random.randint(1, 10)

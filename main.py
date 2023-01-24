@@ -1,11 +1,8 @@
-import Warhammer.odczyt
+import Warhammer.Initialize
 from Warhammer import *
 
-lista = Warhammer.odczyt.load_weapon("D:\Studia\Programowanie\Python\Character_Generator\Warhammer\Weapons.txt")
+lista = Warhammer.Initialize.load_weapons("D:\Studia\Programowanie\Python\Character_Generator\Warhammer\Weapons.txt")
 
-hero = Warhammer.Hero.hero("Bartek","Człowiek","Szlachcic","Mężczyzna","Cos","Cos","Cos",lista[0],lista[1])
+hero = Warhammer.Hero.Hero("Bartek", "Elf", "Szlachcic", "Mężczyzna", "Cos", "Cos", "Cos", lista[0], lista[1])
 
-for x in hero.wep:
-        print(x)
-
-print(hero.st)
+print(hero)

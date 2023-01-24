@@ -1,25 +1,9 @@
-from Warhammer.money import *
+from Warhammer.Money import *
 from Warhammer.CharacterDescription import *
 from Warhammer.specialTraits import *
 
 
-class hero:
-    class Skill:
-        def __init__(self, n, s1, s2):
-            self.name = n  # nazwa skila
-            self.spec1 = s1  # czy specjalizacja +10%
-            self.spec2 = s1  # czy specjalizacja +10%
-
-        def GetSkill(self):
-            return self.name + self.spec1 + self.spec2
-
-    class Talents:
-        def __init__(self, n, desc):
-            self.name = n  # nazwa talenty
-            self.description = desc  # opis umiejętności
-
-        def GetTalent(self):
-            return self.name + self.description
+class Hero:
 
     def __init__(self, name, race, profesion, gender, Ski, Tal, Eq, *Wep):
         self.name = name
@@ -31,6 +15,18 @@ class hero:
         self.Ski = []  # Tabela skili
         self.Tal = []  # Tabela Talentów
         self.Eq = []  # Tabela eq
-        self.Money = money()
+        self.Money = Money()
         for x in Wep:
             self.wep.append(x)
+
+    def __str__(self):
+        wep = ""
+        for x in self.wep:
+            wep += str(x)
+        return "=====================\nBohater\n=====================\nImię:" + self.name + "\nRasa:" +\
+            self.race + "\nProfesja:" + self.profession +\
+            "\n=====================\nOpis Bohatera\n=====================\n" + self.Chad.__str__() +\
+            "\n=====================\nCechy Specjalne\n=====================\n" +\
+            self.st.__str__()+"\n=====================\nBronie\n=====================\n" + wep +\
+            "=====================\nPieniądze\n=====================\n"  + self.Money.__str__()
+

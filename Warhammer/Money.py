@@ -1,7 +1,7 @@
 import random
 
 
-class money:
+class Money:
 
     def __init__(self):
         self.goldCrowns = random.randint(1, 10) + random.randint(1, 10) - 1
@@ -18,3 +18,7 @@ class money:
 
     def return_pennies(self):
         return self.brassPennies
+
+    def __str__(self):
+        return "Złote Korony:" + str(self.goldCrowns) + "\nSrebrne Szylingi:" + \
+            str(self.silverShillings) + "\nMiedziane Pensy:" + str(self.brassPennies)
