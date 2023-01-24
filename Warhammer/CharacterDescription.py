@@ -499,3 +499,283 @@ class CharacterDescription:
                 self.number_of_siblings = 5
             else:
                 self.number_of_siblings = 6
+
+
+        #losowanie koloru wlosow
+        kolor_wlosow_rand = random.randint(1, 10)
+        if race == "Człowiek":
+            if kolor_wlosow_rand == 1:
+                self.kolor_wlosow = "Popielaty"
+            elif kolor_wlosow_rand == 2:
+                self.kolor_wlosow == "Ciemny blond"
+            elif kolor_wlosow_rand == 3:
+                self.kolor_wlosow == "Blond"
+            elif kolor_wlosow_rand == 4:
+                self.kolor_wlosow = "Rudy"
+            elif kolor_wlosow_rand == 5:
+                self.kolor_wlosow = "Ciemno rudy"
+            elif kolor_wlosow_rand == 6:
+                self.kolor_wlosow = "Jasnobrązowy"
+            elif kolor_wlosow_rand == 7:
+                self.kolor_wlosow = "Brązowy"
+            elif kolor_wlosow_rand == 8:
+                self.kolor_wlosow = "Brązowy"
+            elif kolor_wlosow_rand == 9:
+                self.kolor_wlosow = "Ciemnobrązowy"
+            elif kolor_wlosow_rand == 10:
+                self.kolor_wlosow = "Czarny"
+
+        if race == "Elf":
+            if kolor_wlosow_rand == 1:
+                self.kolor_wlosow = "Srebrny"
+            elif kolor_wlosow_rand == 2:
+                self.kolor_wlosow == "Biały"
+            elif kolor_wlosow_rand == 3:
+                self.kolor_wlosow == "Jasny blond"
+            elif kolor_wlosow_rand == 4:
+                self.kolor_wlosow = "Ciemny blond"
+            elif kolor_wlosow_rand == 5:
+                self.kolor_wlosow = "Miedziany"
+            elif kolor_wlosow_rand == 6:
+                self.kolor_wlosow = "Jasnobrązowy"
+            elif kolor_wlosow_rand == 7:
+                self.kolor_wlosow = "Kasztanowy"
+            elif kolor_wlosow_rand == 8:
+                self.kolor_wlosow = "Brązowy"
+            elif kolor_wlosow_rand == 9:
+                self.kolor_wlosow = "Ciemnobrązowy"
+            elif kolor_wlosow_rand == 10:
+                self.kolor_wlosow = "Czarny"
+
+        if race == "Krasnolud":
+            if kolor_wlosow_rand == 1:
+                self.kolor_wlosow = "Popielaty"
+            elif kolor_wlosow_rand == 2:
+                self.kolor_wlosow == "Blond"
+            elif kolor_wlosow_rand == 3:
+                self.kolor_wlosow == "Ciemny rudy"
+            elif kolor_wlosow_rand == 4:
+                self.kolor_wlosow = "Czerwony"
+            elif kolor_wlosow_rand == 5:
+                self.kolor_wlosow = "Rudy"
+            elif kolor_wlosow_rand == 6:
+                self.kolor_wlosow = "Brązowy"
+            elif kolor_wlosow_rand == 7:
+                self.kolor_wlosow = "Brązowy"
+            elif kolor_wlosow_rand == 8:
+                self.kolor_wlosow = "Ciemno brązowy"
+            elif kolor_wlosow_rand == 9:
+                self.kolor_wlosow = "Czarny"
+            elif kolor_wlosow_rand == 10:
+                self.kolor_wlosow = "Kruczo czarny"
+
+
+        if race == "Niziołek":
+            if kolor_wlosow_rand == 1:
+                self.kolor_wlosow = "Popielaty"
+            elif kolor_wlosow_rand == 2:
+                self.kolor_wlosow == "Ciemny blond"
+            elif kolor_wlosow_rand == 3:
+                self.kolor_wlosow == "Blond"
+            elif kolor_wlosow_rand == 4:
+                self.kolor_wlosow = "Blond"
+            elif kolor_wlosow_rand == 5:
+                self.kolor_wlosow = "Rudy"
+            elif kolor_wlosow_rand == 6:
+                self.kolor_wlosow = "Ciemny rudy"
+            elif kolor_wlosow_rand == 7:
+                self.kolor_wlosow = "Jasno brązowy"
+            elif kolor_wlosow_rand == 8:
+                self.kolor_wlosow = "Brązowy"
+            elif kolor_wlosow_rand == 9:
+                self.kolor_wlosow = "Ciemnobrązowy"
+            elif kolor_wlosow_rand == 10:
+                self.kolor_wlosow = "Czarny"
+
+
+        #losowanie miejsca urodzenia
+
+        if race == "Człowiek":
+            miejsce_urodzenia_rand = random.randint(1, 10)
+            if miejsce_urodzenia_rand == 1:
+                self.miejsce_urodzenia = "Averland"
+            elif miejsce_urodzenia_rand == 2:
+                self.miejsce_urodzenia == "Hochland"
+            elif miejsce_urodzenia_rand == 3:
+                self.miejsce_urodzenia == "Middenland"
+            elif miejsce_urodzenia_rand == 4:
+                self.miejsce_urodzenia = "Nordland"
+            elif miejsce_urodzenia_rand == 5:
+                self.miejsce_urodzenia = "Ostermark"
+            elif miejsce_urodzenia_rand == 6:
+                self.miejsce_urodzenia = "Ostland"
+            elif miejsce_urodzenia_rand == 7:
+                self.miejsce_urodzenia = "Reikland"
+            elif miejsce_urodzenia_rand == 8:
+                self.miejsce_urodzenia = "Stirland"
+            elif miejsce_urodzenia_rand == 9:
+                self.miejsce_urodzenia = "Talabecland"
+            elif miejsce_urodzenia_rand == 10:
+                self.miejsce_urodzenia = "Wissenland"
+
+            miejsce_urodzenia_rand = random.randint(1, 10)
+            if miejsce_urodzenia_rand == 1:
+                self.miejsce_urodzenia_rodzaj = "Stolica prowincji"
+            elif miejsce_urodzenia_rand == 2:
+                self.miejsce_urodzenia_rodzaj == "Bogate miasto"
+            elif miejsce_urodzenia_rand == 3:
+                self.miejsce_urodzenia_rodzaj == "Miasto targowe"
+            elif miejsce_urodzenia_rand == 4:
+                self.miejsce_urodzenia_rodzaj = "Fort wojskowy"
+            elif miejsce_urodzenia_rand == 5:
+                self.miejsce_urodzenia_rodzaj = "Miasteczko"
+            elif miejsce_urodzenia_rand == 6:
+                self.miejsce_urodzenia_rodzaj = "Bogata wieś"
+            elif miejsce_urodzenia_rand == 7:
+                self.miejsce_urodzenia_rodzaj = "Wioska rolnicza"
+            elif miejsce_urodzenia_rand == 8:
+                self.miejsce_urodzenia_rodzaj = "Wioska rybacka"
+            elif miejsce_urodzenia_rand == 9:
+                self.miejsce_urodzenia_rodzaj = "Biedna wioska"
+            elif miejsce_urodzenia_rand == 10:
+                self.miejsce_urodzenia_rodzaj = "Samotna chata"
+
+        miejsce_urodzenia_rand = random.randint(1, 100)
+
+        if race == "Krasnolud":
+            if miejsce_urodzenia_rand <=30:
+                miejsce_urodzenia_rand = random.randint(1, 10)
+                if miejsce_urodzenia_rand == 1:
+                    self.miejsce_urodzenia = "Averland"
+                elif miejsce_urodzenia_rand == 2:
+                    self.miejsce_urodzenia == "Hochland"
+                elif miejsce_urodzenia_rand == 3:
+                    self.miejsce_urodzenia == "Middenland"
+                elif miejsce_urodzenia_rand == 4:
+                    self.miejsce_urodzenia = "Nordland"
+                elif miejsce_urodzenia_rand == 5:
+                    self.miejsce_urodzenia = "Ostermark"
+                elif miejsce_urodzenia_rand == 6:
+                    self.miejsce_urodzenia = "Ostland"
+                elif miejsce_urodzenia_rand == 7:
+                    self.miejsce_urodzenia = "Reikland"
+                elif miejsce_urodzenia_rand == 8:
+                    self.miejsce_urodzenia = "Stirland"
+                elif miejsce_urodzenia_rand == 9:
+                    self.miejsce_urodzenia = "Talabecland"
+                elif miejsce_urodzenia_rand == 10:
+                    self.miejsce_urodzenia = "Wissenland"
+
+                miejsce_urodzenia_rand = random.randint(1, 10)
+                if miejsce_urodzenia_rand == 1:
+                    self.miejsce_urodzenia_rodzaj = "Stolica prowincji"
+                elif miejsce_urodzenia_rand == 2:
+                    self.miejsce_urodzenia_rodzaj == "Bogate miasto"
+                elif miejsce_urodzenia_rand == 3:
+                    self.miejsce_urodzenia_rodzaj == "Miasto targowe"
+                elif miejsce_urodzenia_rand == 4:
+                    self.miejsce_urodzenia_rodzaj = "Fort wojskowy"
+                elif miejsce_urodzenia_rand == 5:
+                    self.miejsce_urodzenia_rodzaj = "Miasteczko"
+                elif miejsce_urodzenia_rand == 6:
+                    self.miejsce_urodzenia_rodzaj = "Bogata wieś"
+                elif miejsce_urodzenia_rand == 7:
+                    self.miejsce_urodzenia_rodzaj = "Wioska rolnicza"
+                elif miejsce_urodzenia_rand == 8:
+                    self.miejsce_urodzenia_rodzaj = "Wioska rybacka"
+                elif miejsce_urodzenia_rand == 9:
+                    self.miejsce_urodzenia_rodzaj = "Biedna wioska"
+                elif miejsce_urodzenia_rand == 10:
+                    self.miejsce_urodzenia_rodzaj = "Samotna chata"
+
+            elif miejsce_urodzenia_rand <= 40:
+                self.miejsce_urodzenia == "Karak Norn (Góry Szare)"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 50:
+                self.miejsce_urodzenia == "Karak Izor (Przeskok)"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 60:
+                self.miejsce_urodzenia = "Karak Hirn (Góry Czarne)"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 70:
+                self.miejsce_urodzenia = "Karak Hadrin (Góry Krańca Świata)"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 80:
+                self.miejsce_urodzenia = "Karaz-a-Karak (Góry Krańca Świata)"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 90:
+                self.miejsce_urodzenia = "Zhufbar (Góry Krańca Świata)"
+                self.miejsce_urodzenia_rodzaj == "/"
+            else:
+                self.miejsce_urodzenia = "Barak Varr (Czarna Zatoka)"
+                self.miejsce_urodzenia_rodzaj == "/"
+
+        if race == "Elf":
+            if miejsce_urodzenia_rand <= 20:
+                self.miejsce_urodzenia == "Altdorf"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 40:
+                self.miejsce_urodzenia == "Marienburg"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 70:
+                self.miejsce_urodzenia == "Las Laurelorn"
+                self.miejsce_urodzenia_rodzaj == "/"
+            elif miejsce_urodzenia_rand <= 85:
+                self.miejsce_urodzenia == "Wielki Las"
+                self.miejsce_urodzenia_rodzaj == "/"
+            else:
+                self.miejsce_urodzenia == "Las Reikwald"
+                self.miejsce_urodzenia_rodzaj == "/"
+
+        if race == "Niziołek":
+            if miejsce_urodzenia_rand <= 50:
+                miejsce_urodzenia_rand = random.randint(1, 10)
+                if miejsce_urodzenia_rand == 1:
+                    self.miejsce_urodzenia = "Averland"
+                elif miejsce_urodzenia_rand == 2:
+                    self.miejsce_urodzenia == "Hochland"
+                elif miejsce_urodzenia_rand == 3:
+                    self.miejsce_urodzenia == "Middenland"
+                elif miejsce_urodzenia_rand == 4:
+                    self.miejsce_urodzenia = "Nordland"
+                elif miejsce_urodzenia_rand == 5:
+                    self.miejsce_urodzenia = "Ostermark"
+                elif miejsce_urodzenia_rand == 6:
+                    self.miejsce_urodzenia = "Ostland"
+                elif miejsce_urodzenia_rand == 7:
+                    self.miejsce_urodzenia = "Reikland"
+                elif miejsce_urodzenia_rand == 8:
+                    self.miejsce_urodzenia = "Stirland"
+                elif miejsce_urodzenia_rand == 9:
+                    self.miejsce_urodzenia = "Talabecland"
+                elif miejsce_urodzenia_rand == 10:
+                    self.miejsce_urodzenia = "Wissenland"
+
+                miejsce_urodzenia_rand = random.randint(1, 10)
+                if miejsce_urodzenia_rand == 1:
+                    self.miejsce_urodzenia_rodzaj = "Stolica prowincji"
+                elif miejsce_urodzenia_rand == 2:
+                    self.miejsce_urodzenia_rodzaj == "Bogate miasto"
+                elif miejsce_urodzenia_rand == 3:
+                    self.miejsce_urodzenia_rodzaj == "Miasto targowe"
+                elif miejsce_urodzenia_rand == 4:
+                    self.miejsce_urodzenia_rodzaj = "Fort wojskowy"
+                elif miejsce_urodzenia_rand == 5:
+                    self.miejsce_urodzenia_rodzaj = "Miasteczko"
+                elif miejsce_urodzenia_rand == 6:
+                    self.miejsce_urodzenia_rodzaj = "Bogata wieś"
+                elif miejsce_urodzenia_rand == 7:
+                    self.miejsce_urodzenia_rodzaj = "Wioska rolnicza"
+                elif miejsce_urodzenia_rand == 8:
+                    self.miejsce_urodzenia_rodzaj = "Wioska rybacka"
+                elif miejsce_urodzenia_rand == 9:
+                    self.miejsce_urodzenia_rodzaj = "Biedna wioska"
+                elif miejsce_urodzenia_rand == 10:
+                    self.miejsce_urodzenia_rodzaj = "Samotna chata"
+            else:
+                self.miejsce_urodzenia == ""
+                self.miejsce_urodzenia_rodzaj == "/"
+
+
+
+
