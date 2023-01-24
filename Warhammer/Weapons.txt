@@ -1,0 +1,39 @@
+Broń Jednoręczna;	Zwykła;	/;	S;	Brak
+Broń Dwuręczna;	Dwuręczna;	/;	S;	Druzgoczący, Powolny
+Halabarda;	Dwuręczna;	/;	S;	Specjalny
+Kij;	Zwykła;	/;	S-2;	Ogłuszający, Parujący
+Kopia;	Kawaleryjska;	/;	S+1;	Ciężki, Druzgoczący, Szybki
+Korbacz;	Korbacz;	/;	S+1;	Ciężki, Druzgoczący
+Lanca;	Kawaleryjska;	/;	S;	Ciężki, Druzgoczący, Szybki
+Lewak;	Parująca;	/;	S-3;	Parujący, Wyważony
+Łamacz Mieczy;	Parująca;	/;	S-3;	Specjalny, Wyważony
+Morgensztern;	Korbacz;	/;	S;	Ciężki, Druzgoczący
+Puklerz;	Parująca;	/;	S-4;	Ogłuszający, Parujący, Wyważony
+Rapier;	Szermiercza;	/;	S-1;	Szybki
+Kastet;	Zwykła;	/;	S-3;	Ogłuszający
+Szpada;	Szermiercza;	/;	S-2;	Precyzyjny, Szybki
+Sztylet;	Zwykła;	/;	S-3;	Brak
+Tarcza;	Zwykła;	/;	S-2;	Parujący, Specjalny
+Włócznia;	Zwykła;	/;	S;	Szybki
+Arkan;	Unieruchamiająca;	8;	/;	Unieruchamiający
+Bicz;	Unieruchamiająca;	6;	S-4;	Szybki, Unieruchamiający
+Bolas;	Unieruchamiająca;	16;	1;	Unieruchamiający
+Długi Łuk;	Długi łuk;	60;	3;	Przebijający Zbroję
+Elfi Łuk;	Długi łuk;	72;	3;	Przebijający Zbroję
+Garłacz;	Palna;	32;	3;	Odłamkowy
+Krótki Łuk;	Zwykła;	32;	3;	Brak
+Kusz Pistoletowa;	Kusza;	16;	2;	Brak
+Kusz Samopowtarzalna;	Kusza;	32;	2;	Specjalny
+Kusza;	Zwykła;	60;	4;	Brak
+Łuk;	Zwykła;	48;	3;	Brak
+Muszkiet Hochlandzki;	Mechaniczna;	96;	4;	Druzgoczący, Zawodny
+Nóż do rzucania;	Rzucana;	12;	S-3;	Brak
+Oszczep;	Zwykła;	16;	S-1;	Brak
+Pistolet;	Palna;	16;	4;	Druzgoczący, Zawodny
+Pistolet Wielostrzałowy;	Mechaniczna;	16;	4;	Ekspermentalny
+Proca;	Proca;	32;	3;	Brak
+Proca Drzewcowa;	Proca;	48;	4;	Brak
+Rusznica;	Palna;	48;	4;	Druzgoczący, Zawodny
+Rusznica Wielostrzałowa;	Mechaniczna;	48;	4;	Ekspermentalny
+Sieć;	Unieruchamiająca;	8;	/;	Unieruchamiający
+Topór do rzucania;	Rzucana;	8;	S-2;	Brak

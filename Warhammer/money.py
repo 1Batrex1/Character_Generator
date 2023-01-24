@@ -1,13 +1,10 @@
 import random
 class money:
-    goldCrowns = 0
-    silverShillings = 0
-    brassPennies = 0
 
     def __init__(self):
-        goldCrowns = random.randint(1, 10) + random.randint(1,10) - 1 #generowanie liczby koron poprzez rzut 2d10, następnie 'rozbijamy' jedną na mniejsze nominały
-        silverShillings = 19 #20-1 żeby rozbić na mniejszy nominał
-        brassPennies = 12
+        self.goldCrowns = random.randint(1, 10) + random.randint(1,10) - 1 #generowanie liczby koron poprzez rzut 2d10, następnie 'rozbijamy' jedną na mniejsze nominały
+        self.silverShillings = 19 #20-1 żeby rozbić na mniejszy nominał
+        self.brassPennies = 12
 
     def return_crowns(self):
         return self.goldCrowns

@@ -1,11 +1,12 @@
-import re
+from Weapon import Weapon
 def wczytywanie(filename):
     bronie = []
 
     with open(filename, encoding="utf8") as f:
         for line in f:
             pola = line.strip('\t').split(';')
-            bronie.append(pola[0] + pola[1] + pola[2] + pola[3] + pola[4])
+            w = Weapon(pola[0] , pola[1] , pola[2] , pola[3] , pola[4])
+            bronie.append(w)
 
 
     return bronie
@@ -13,6 +14,6 @@ def wczytywanie(filename):
 
 def read():
     objekt = wczytywanie("Weapons.txt")
-    print(objekt)
+    for x in objekt:
+        print(x)
 
-read()

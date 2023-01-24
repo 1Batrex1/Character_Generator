@@ -1,3 +1,7 @@
+from Warhammer import money
+from Warhammer import CharacterDescription
+
+
 
 class hero:
 
@@ -18,17 +22,17 @@ class hero:
             return self.name + self.description
 
 
-
-    def __init__(self,n,r,p,cd,Wep,Ski,Tal,Eq,M):
-        self.name = n
-        self.race = r
-        self.profession = p
-        self.Chad = cd
+    def __init__(self,name,race,profesion,gender,Wep,Ski,Tal,Eq):
+        self.name = name
+        self.race = race
+        self.profession = profesion
+        self.Chad = CharacterDescription(gender,self.race)
         self.st = "Tu będzie klasa"
         self.wep = [] #Tabela Broni
         self.Ski = [] #Tabela skili
         self.Tal = [] # Tabela Talentów
         self.Eq = [] #Tabela eq
+        self.Money = money()
         self.wep.append(Wep)
 
 
