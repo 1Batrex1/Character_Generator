@@ -1,4 +1,3 @@
-import Warhammer.Initialize
 from Warhammer import *
 
 lista = Warhammer.Initialize.load_weapons()
