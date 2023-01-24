@@ -2,6 +2,7 @@ import random
 class CharacterDescription:
     def __init__(self, gender,race):
         age_rand = random.randint(1,100)
+        #Losowanie wieku
         if race == "Człowiek":
             if age_rand <= 5:
                 self.age = 16
@@ -84,7 +85,7 @@ class CharacterDescription:
                 self.age = 120
             else:
                 self.age = 125
-        elif race == "Krasnolód":
+        elif race == "Krasnolud":
             if age_rand <= 5:
                 self.age = 20
             elif age_rand <= 10:
@@ -166,5 +167,45 @@ class CharacterDescription:
                 self.age = 58
             else:
                 self.age = 60
-        else:
-            "Dupa"
+
+        #Losowanie Wzrostu
+        height_rand = random.randint(1,10) + random.randint(1,10)
+        if race == "Człowiek":
+            self.height= 160 + height_rand
+            if gender == "Kobieta":
+                self.height -= 10
+        elif race == "Elf":
+            self.height= 170 + height_rand
+            if gender == "Kobieta":
+                self.height -= 10
+        elif race == "Krasnolud":
+            self.height= 145 + height_rand
+            if gender == "Kobieta":
+                self.height -= 15
+        elif race == "Niziołek":
+            self.height= 110 + height_rand
+            if gender == "Kobieta":
+                self.height -= 10
+        #Losowanie Koloru Oczu
+        eye_rand = random.randint(1,10) + random.randint(1,10)
+        if race == "Człowiek":
+            if eye_rand == 1:
+                self.eye_color = "Szary"
+            elif eye_rand == 2:
+                self.eye_color = "Ciemnoniebieski"
+            elif eye_rand == 3:
+                self.eye_color = "Niebieski"
+            elif eye_rand == 4:
+                self.eye_color = "Zielony"
+            elif eye_rand == 5:
+                self.eye_color = "Piwny"
+            elif eye_rand == 6:
+                self.eye_color = "Jasnobrązowy"
+            elif eye_rand == 7:
+                self.eye_color = "Brązowy"
+            elif eye_rand == 8:
+                self.eye_color = "Ciemnobrązowy"
+            elif eye_rand == 9:
+                self.eye_color = "Fioletowy"
+            elif eye_rand == 10:
+                self.eye_color = "Czarny"

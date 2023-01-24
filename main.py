@@ -1,3 +1,12 @@
 from Warhammer import *
+from PyQt6 import uic
+from PyQt6.QtWidgets import QApplication
 
-Heo = Hero.hero("Imie","Człowiek","Szlachcic","Fajny gośc","Miecz","k","k","k","k")
+Form, Window = uic.loadUiType("maingui.ui")
+
+app = QApplication([])
+window = Window()
+form = Form()
+form.setupUi(window)
+window.show()
+app.exec()

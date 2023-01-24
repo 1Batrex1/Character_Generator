@@ -1,1 +1,2 @@
 import Warhammer.Hero
+import Warhammer.CharacterDescription

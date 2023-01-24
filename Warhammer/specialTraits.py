@@ -24,7 +24,7 @@ class SpecialTraits:
             self.agility += 10
             self.speed = 5
 
-        if (race == "Krasnolód"):
+        if (race == "Krasnolud"):
             self.fightSkills += 10
             self.endurance += 10
             self.agility -= 10
@@ -59,7 +59,7 @@ class SpecialTraits:
             else:
                 self.hp = 12
 
-        if (race == "Krasnolód"):
+        if (race == "Krasnolud"):
             if (self.hp <= 3):
                 self.hp = 11
             elif (self.hp <= 6):
@@ -99,7 +99,7 @@ class SpecialTraits:
             else:
                 self.pp = 2
 
-        if (race == "Krasnolód"):
+        if (race == "Krasnolud"):
             if (self.pp <= 4):
                 self.pp = 1
             elif (self.pp <= 7):

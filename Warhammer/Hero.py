@@ -1,5 +1,5 @@
-from Warhammer import money
-from Warhammer import CharacterDescription
+from Warhammer.money import *
+from Warhammer.CharacterDescription import *
 
 
 
