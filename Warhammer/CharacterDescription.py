@@ -507,9 +507,9 @@ class CharacterDescription:
             if kolor_wlosow_rand == 1:
                 self.kolor_wlosow = "Popielaty"
             elif kolor_wlosow_rand == 2:
-                self.kolor_wlosow == "Ciemny blond"
+                self.kolor_wlosow = "Ciemny blond"
             elif kolor_wlosow_rand == 3:
-                self.kolor_wlosow == "Blond"
+                self.kolor_wlosow = "Blond"
             elif kolor_wlosow_rand == 4:
                 self.kolor_wlosow = "Rudy"
             elif kolor_wlosow_rand == 5:
@@ -529,9 +529,9 @@ class CharacterDescription:
             if kolor_wlosow_rand == 1:
                 self.kolor_wlosow = "Srebrny"
             elif kolor_wlosow_rand == 2:
-                self.kolor_wlosow == "Biały"
+                self.kolor_wlosow = "Biały"
             elif kolor_wlosow_rand == 3:
-                self.kolor_wlosow == "Jasny blond"
+                self.kolor_wlosow = "Jasny blond"
             elif kolor_wlosow_rand == 4:
                 self.kolor_wlosow = "Ciemny blond"
             elif kolor_wlosow_rand == 5:
@@ -551,9 +551,9 @@ class CharacterDescription:
             if kolor_wlosow_rand == 1:
                 self.kolor_wlosow = "Popielaty"
             elif kolor_wlosow_rand == 2:
-                self.kolor_wlosow == "Blond"
+                self.kolor_wlosow = "Blond"
             elif kolor_wlosow_rand == 3:
-                self.kolor_wlosow == "Ciemny rudy"
+                self.kolor_wlosow = "Ciemny rudy"
             elif kolor_wlosow_rand == 4:
                 self.kolor_wlosow = "Czerwony"
             elif kolor_wlosow_rand == 5:
@@ -574,9 +574,9 @@ class CharacterDescription:
             if kolor_wlosow_rand == 1:
                 self.kolor_wlosow = "Popielaty"
             elif kolor_wlosow_rand == 2:
-                self.kolor_wlosow == "Ciemny blond"
+                self.kolor_wlosow = "Ciemny blond"
             elif kolor_wlosow_rand == 3:
-                self.kolor_wlosow == "Blond"
+                self.kolor_wlosow = "Blond"
             elif kolor_wlosow_rand == 4:
                 self.kolor_wlosow = "Blond"
             elif kolor_wlosow_rand == 5:
@@ -600,9 +600,9 @@ class CharacterDescription:
             if miejsce_urodzenia_rand == 1:
                 self.miejsce_urodzenia = "Averland"
             elif miejsce_urodzenia_rand == 2:
-                self.miejsce_urodzenia == "Hochland"
+                self.miejsce_urodzenia = "Hochland"
             elif miejsce_urodzenia_rand == 3:
-                self.miejsce_urodzenia == "Middenland"
+                self.miejsce_urodzenia = "Middenland"
             elif miejsce_urodzenia_rand == 4:
                 self.miejsce_urodzenia = "Nordland"
             elif miejsce_urodzenia_rand == 5:
@@ -622,9 +622,9 @@ class CharacterDescription:
             if miejsce_urodzenia_rand == 1:
                 self.miejsce_urodzenia_rodzaj = "Stolica prowincji"
             elif miejsce_urodzenia_rand == 2:
-                self.miejsce_urodzenia_rodzaj == "Bogate miasto"
+                self.miejsce_urodzenia_rodzaj = "Bogate miasto"
             elif miejsce_urodzenia_rand == 3:
-                self.miejsce_urodzenia_rodzaj == "Miasto targowe"
+                self.miejsce_urodzenia_rodzaj = "Miasto targowe"
             elif miejsce_urodzenia_rand == 4:
                 self.miejsce_urodzenia_rodzaj = "Fort wojskowy"
             elif miejsce_urodzenia_rand == 5:
@@ -648,9 +648,9 @@ class CharacterDescription:
                 if miejsce_urodzenia_rand == 1:
                     self.miejsce_urodzenia = "Averland"
                 elif miejsce_urodzenia_rand == 2:
-                    self.miejsce_urodzenia == "Hochland"
+                    self.miejsce_urodzenia = "Hochland"
                 elif miejsce_urodzenia_rand == 3:
-                    self.miejsce_urodzenia == "Middenland"
+                    self.miejsce_urodzenia = "Middenland"
                 elif miejsce_urodzenia_rand == 4:
                     self.miejsce_urodzenia = "Nordland"
                 elif miejsce_urodzenia_rand == 5:
@@ -670,9 +670,9 @@ class CharacterDescription:
                 if miejsce_urodzenia_rand == 1:
                     self.miejsce_urodzenia_rodzaj = "Stolica prowincji"
                 elif miejsce_urodzenia_rand == 2:
-                    self.miejsce_urodzenia_rodzaj == "Bogate miasto"
+                    self.miejsce_urodzenia_rodzaj = "Bogate miasto"
                 elif miejsce_urodzenia_rand == 3:
-                    self.miejsce_urodzenia_rodzaj == "Miasto targowe"
+                    self.miejsce_urodzenia_rodzaj = "Miasto targowe"
                 elif miejsce_urodzenia_rand == 4:
                     self.miejsce_urodzenia_rodzaj = "Fort wojskowy"
                 elif miejsce_urodzenia_rand == 5:
@@ -689,43 +689,43 @@ class CharacterDescription:
                     self.miejsce_urodzenia_rodzaj = "Samotna chata"
 
             elif miejsce_urodzenia_rand <= 40:
-                self.miejsce_urodzenia == "Karak Norn (Góry Szare)"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = "Karak Norn (Góry Szare)"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 50:
-                self.miejsce_urodzenia == "Karak Izor (Przeskok)"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = "Karak Izor (Przeskok)"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 60:
                 self.miejsce_urodzenia = "Karak Hirn (Góry Czarne)"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 70:
                 self.miejsce_urodzenia = "Karak Hadrin (Góry Krańca Świata)"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 80:
                 self.miejsce_urodzenia = "Karaz-a-Karak (Góry Krańca Świata)"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 90:
                 self.miejsce_urodzenia = "Zhufbar (Góry Krańca Świata)"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia_rodzaj = "/"
             else:
                 self.miejsce_urodzenia = "Barak Varr (Czarna Zatoka)"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia_rodzaj = "/"
 
         if race == "Elf":
             if miejsce_urodzenia_rand <= 20:
-                self.miejsce_urodzenia == "Altdorf"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = "Altdorf"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 40:
-                self.miejsce_urodzenia == "Marienburg"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = "Marienburg"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 70:
-                self.miejsce_urodzenia == "Las Laurelorn"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = "Las Laurelorn"
+                self.miejsce_urodzenia_rodzaj = "/"
             elif miejsce_urodzenia_rand <= 85:
-                self.miejsce_urodzenia == "Wielki Las"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = "Wielki Las"
+                self.miejsce_urodzenia_rodzaj = "/"
             else:
-                self.miejsce_urodzenia == "Las Reikwald"
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = "Las Reikwald"
+                self.miejsce_urodzenia_rodzaj = "/"
 
         if race == "Niziołek":
             if miejsce_urodzenia_rand <= 50:
@@ -733,9 +733,9 @@ class CharacterDescription:
                 if miejsce_urodzenia_rand == 1:
                     self.miejsce_urodzenia = "Averland"
                 elif miejsce_urodzenia_rand == 2:
-                    self.miejsce_urodzenia == "Hochland"
+                    self.miejsce_urodzenia = "Hochland"
                 elif miejsce_urodzenia_rand == 3:
-                    self.miejsce_urodzenia == "Middenland"
+                    self.miejsce_urodzenia = "Middenland"
                 elif miejsce_urodzenia_rand == 4:
                     self.miejsce_urodzenia = "Nordland"
                 elif miejsce_urodzenia_rand == 5:
@@ -755,9 +755,9 @@ class CharacterDescription:
                 if miejsce_urodzenia_rand == 1:
                     self.miejsce_urodzenia_rodzaj = "Stolica prowincji"
                 elif miejsce_urodzenia_rand == 2:
-                    self.miejsce_urodzenia_rodzaj == "Bogate miasto"
+                    self.miejsce_urodzenia_rodzaj = "Bogate miasto"
                 elif miejsce_urodzenia_rand == 3:
-                    self.miejsce_urodzenia_rodzaj == "Miasto targowe"
+                    self.miejsce_urodzenia_rodzaj = "Miasto targowe"
                 elif miejsce_urodzenia_rand == 4:
                     self.miejsce_urodzenia_rodzaj = "Fort wojskowy"
                 elif miejsce_urodzenia_rand == 5:
@@ -773,8 +773,8 @@ class CharacterDescription:
                 elif miejsce_urodzenia_rand == 10:
                     self.miejsce_urodzenia_rodzaj = "Samotna chata"
             else:
-                self.miejsce_urodzenia == ""
-                self.miejsce_urodzenia_rodzaj == "/"
+                self.miejsce_urodzenia = ""
+                self.miejsce_urodzenia_rodzaj = "/"
 
 
 
