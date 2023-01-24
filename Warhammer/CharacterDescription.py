@@ -209,3 +209,138 @@ class CharacterDescription:
                 self.eye_color = "Fioletowy"
             elif eye_rand == 10:
                 self.eye_color = "Czarny"
+        elif race == "Elf":
+            if eye_rand == 1:
+                self.eye_color = "Szaroniebieski"
+            elif eye_rand == 2:
+                self.eye_color = "Niebieski"
+            elif eye_rand == 3:
+                self.eye_color = "Zielony"
+            elif eye_rand == 4:
+                self.eye_color = "Orzechowy"
+            elif eye_rand == 5:
+                self.eye_color = "Kasztanowy"
+            elif eye_rand == 6:
+                self.eye_color = "Brązowy"
+            elif eye_rand == 7:
+                self.eye_color = "Ciemnobrązowy"
+            elif eye_rand == 8:
+                self.eye_color = "Srebrny"
+            elif eye_rand == 9:
+                self.eye_color = "Fioletowy"
+            elif eye_rand == 10:
+                self.eye_color = "Czarny"
+        elif race == "Krasnolud":
+            if eye_rand == 1:
+                self.eye_color = "Szary"
+            elif eye_rand == 2:
+                self.eye_color = "Ciemnoniebieski"
+            elif eye_rand == 3:
+                self.eye_color = "Piwny"
+            elif eye_rand <= 5:
+                self.eye_color = "Jasnobrązowy"
+            elif eye_rand <= 7:
+                self.eye_color = "Brązowy"
+            elif eye_rand <= 9:
+                self.eye_color = "Ciemnobrązowy"
+            elif eye_rand == 10:
+                self.eye_color = "Fioletowy"
+        elif race == "Niziołek":
+            if eye_rand == 1:
+                self.eye_color = "Niebieski"
+            elif eye_rand <= 3:
+                self.eye_color = "Orzechowy"
+            elif eye_rand <= 5:
+                self.eye_color = "Jasnobrązowy"
+            elif eye_rand <= 7:
+                self.eye_color = "Brązowy"
+            elif eye_rand <= 10:
+                self.eye_color = "Ciemnobrązowy"
+
+        #Losowanie Znaku szczególnego
+        distinctive_sign_rand = random.randint(1,100)
+        if distinctive_sign_rand <= 5:
+            self.distinctive_sign = "Bielmo na oku"
+        elif distinctive_sign_rand <= 10:
+            self.distinctive_sign = "Blizna"
+        elif distinctive_sign_rand <= 15:
+            self.distinctive_sign = "Brak brwi"
+        elif distinctive_sign_rand <= 20:
+            self.distinctive_sign = "Brak palca"
+        elif distinctive_sign_rand <= 25:
+            self.distinctive_sign = "Brak zęba"
+        elif distinctive_sign_rand <= 30:
+            self.distinctive_sign = "Brodawki"
+        elif distinctive_sign_rand <= 35:
+            self.distinctive_sign = "Blada cera"
+        elif distinctive_sign_rand <= 40:
+            self.distinctive_sign = "Duży nos"
+        elif distinctive_sign_rand <= 45:
+            self.distinctive_sign = "Duży pieprzyk"
+        elif distinctive_sign_rand <= 50:
+            self.distinctive_sign = "Dziwny zapach ciała"
+        elif distinctive_sign_rand <= 55:
+            self.distinctive_sign = "Kolczyk w nosie"
+        elif distinctive_sign_rand <= 60:
+            self.distinctive_sign = "Kolczyk w uchu"
+        elif distinctive_sign_rand <= 65:
+            self.distinctive_sign = "Niewielka łysina"
+        elif distinctive_sign_rand <= 70:
+            self.distinctive_sign = "Oczy różnego koloru"
+        elif distinctive_sign_rand <= 75:
+            self.distinctive_sign = "Piegi"
+        elif distinctive_sign_rand <= 80:
+            self.distinctive_sign = "Poszarpane ucho"
+        elif distinctive_sign_rand <= 85:
+            self.distinctive_sign = "Ślady po ospie"
+        elif distinctive_sign_rand <= 90:
+            self.distinctive_sign = "Tatuaż"
+        elif distinctive_sign_rand <= 94:
+            self.distinctive_sign = "Wystające zęby"
+        elif distinctive_sign_rand <= 98:
+            self.distinctive_sign = "Wytrzeszczone oczy"
+        else:
+            self.distinctive_sign = "Złamany nos"
+
+        # Losowanie Znaku gwiezdnego
+        star_sign_rand = random.randint(1, 100)
+        if star_sign_rand <= 5:
+            self.star_sign = "Bębniarz"
+        elif star_sign_rand <= 10:
+            self.star_sign = "Dudy"
+        elif star_sign_rand <= 15:
+            self.star_sign = "Dwa Byki"
+        elif star_sign_rand <= 25:
+            self.star_sign = "Głupiec Mummit"
+        elif star_sign_rand <= 30:
+            self.star_sign = "Gwiazda Uroku"
+        elif star_sign_rand <= 35:
+            self.star_sign = "Gwiazda Wieczorna"
+        elif star_sign_rand <= 40:
+            self.star_sign = "Kocioł Ryhi"
+        elif star_sign_rand <= 45:
+            self.star_sign = "Lancet"
+        elif star_sign_rand <= 50:
+            self.star_sign = "Mędrzec Mammit"
+        elif star_sign_rand <= 55:
+            self.star_sign = "Pas Grungiego"
+        elif star_sign_rand <= 60:
+            self.star_sign = "Rozbity Wóz"
+        elif star_sign_rand <= 65:
+            self.star_sign = "Smok Dragomas"
+        elif star_sign_rand <= 70:
+            self.star_sign = "Sznur Limnera"
+        elif star_sign_rand <= 75:
+            self.star_sign = "Tancerka"
+        elif star_sign_rand <= 80:
+            self.star_sign = "Tłusty Kozioł"
+        elif star_sign_rand <= 85:
+            self.star_sign = "Vobist Ulotny"
+        elif star_sign_rand <= 90:
+            self.star_sign = "Wielki Krzyż"
+        elif star_sign_rand <= 95:
+            self.star_sign = "Wół Gnuthus"
+        elif star_sign_rand <= 98:
+            self.star_sign = "Wymund Pustelnik"
+        else:
+            self.star_sign = "Złoty Kogut"
