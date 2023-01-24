@@ -110,7 +110,6 @@ class CharacterDescription:
                     else:
                         self.waga = 70
 
-
         # Losowanie wieku
         if race == "Człowiek":
             if age_rand <= 5:
@@ -500,8 +499,7 @@ class CharacterDescription:
             else:
                 self.number_of_siblings = 6
 
-
-        #losowanie koloru wlosow
+        # losowanie koloru wlosow
         kolor_wlosow_rand = random.randint(1, 10)
         if race == "Człowiek":
             if kolor_wlosow_rand == 1:
@@ -569,7 +567,6 @@ class CharacterDescription:
             elif kolor_wlosow_rand == 10:
                 self.kolor_wlosow = "Kruczo czarny"
 
-
         if race == "Niziołek":
             if kolor_wlosow_rand == 1:
                 self.kolor_wlosow = "Popielaty"
@@ -592,8 +589,7 @@ class CharacterDescription:
             elif kolor_wlosow_rand == 10:
                 self.kolor_wlosow = "Czarny"
 
-
-        #losowanie miejsca urodzenia
+        # losowanie miejsca urodzenia
 
         if race == "Człowiek":
             miejsce_urodzenia_rand = random.randint(1, 10)
@@ -643,7 +639,7 @@ class CharacterDescription:
         miejsce_urodzenia_rand = random.randint(1, 100)
 
         if race == "Krasnolud":
-            if miejsce_urodzenia_rand <=30:
+            if miejsce_urodzenia_rand <= 30:
                 miejsce_urodzenia_rand = random.randint(1, 10)
                 if miejsce_urodzenia_rand == 1:
                     self.miejsce_urodzenia = "Averland"
@@ -775,7 +771,3 @@ class CharacterDescription:
             else:
                 self.miejsce_urodzenia = ""
                 self.miejsce_urodzenia_rodzaj = "/"
-
-
-
-

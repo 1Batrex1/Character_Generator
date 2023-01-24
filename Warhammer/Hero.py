@@ -21,7 +21,7 @@ class hero:
         def GetTalent(self):
             return self.name + self.description
 
-    def __init__(self, name, race, profesion, gender,Ski, Tal, Eq, *Wep):
+    def __init__(self, name, race, profesion, gender, Ski, Tal, Eq, *Wep):
         self.name = name
         self.race = race
         self.profession = profesion
