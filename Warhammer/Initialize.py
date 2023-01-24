@@ -2,12 +2,11 @@ from Warhammer.Weapon import Weapon
 from Warhammer.Eq import Eq
 from Warhammer.Skill import Skill
 from Warhammer.Talent import Talent
-
-
-def load_weapons(filename):
+from os import getcwd
+def load_weapons():
     weapons = []
-
-    with open(filename, encoding="utf8") as f:
+    print()
+    with open(getcwd()+"\\Warhammer\\Weapons.txt", encoding="utf8") as f:
         for line in f:
             pola = line.strip('\t').split(';')
             w = Weapon(pola[0], pola[1], pola[2], pola[3], pola[4])
