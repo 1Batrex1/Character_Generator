@@ -6,6 +6,11 @@ lista = Warhammer.Initialize.load_weapons()
 #    if "Rapier" in x.name:
 #        print(lista.index(x))
 
-hero = Warhammer.Hero.Hero("Bartek", "Niziołek", "Szlachcic", "Mężczyzna", "Cos", "Cos", "Cos", lista[0] , lista[1])
+#hero = Warhammer.Hero.Hero("Bartek", "Niziołek", "Szlachcic", "Mężczyzna", "Cos", "Cos", "Cos", lista[0] , lista[1])
 
-print(hero)
+#print(hero)
+
+lista_broni_szlachic = [5,7,9]
+
+for x in lista_broni_szlachic:
+    print(lista[x])

@@ -11,7 +11,7 @@ class Hero:
         self.profession = profesion
         self.Chad = CharacterDescription(gender, self.race)
         self.st = SpecialTraits(self.race)
-        self.wep = Wep  # Tabela Broni
+        self.wep  = [] # Tabela Broni
         self.Ski = []  # Tabela skili
         self.Tal = []  # Tabela Talentów
         self.Eq = []  # Tabela eq
