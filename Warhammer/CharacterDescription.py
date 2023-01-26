@@ -772,10 +772,9 @@ class CharacterDescription:
                 self.miejsce_urodzenia = ""
                 self.miejsce_urodzenia_rodzaj = "/"
 
-
     def __str__(self):
         return "Wiek:" + str(self.age) + "\nWaga:" + str(self.waga) + "\nWzrost:" + str(self.height) + \
             "\nKolor oczu:" + self.eye_color + "\nKolor włosów:" + self.kolor_wlosow + \
-            "\nZnak Szczególny:" + self.distinctive_sign + "\nZnak Gwiezdny:" + self.star_sign + "\nMiejsce Urodzenia:" +\
+            "\nZnak Szczególny:" + self.distinctive_sign + "\nZnak Gwiezdny:" + self.star_sign + "\nMiejsce Urodzenia:" + \
             self.miejsce_urodzenia + "\nRodzaj miejsca Urodzenia:" + self.miejsce_urodzenia_rodzaj + \
             "\nLiczba Rodzeństwa:" + str(self.number_of_siblings)
