@@ -1,5 +1,4 @@
 from Warhammer import *
-
 lista = Warhammer.Initialize.load_weapons()
 
 #for x in lista: tak można znaleźć coś w liście obiektów
