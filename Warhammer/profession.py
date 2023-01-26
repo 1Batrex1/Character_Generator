@@ -1,4 +1,4 @@
-class Profesion:
+class Profession:
 
 
     def __init__(self,name,weapon_id_list,item_id_list):
