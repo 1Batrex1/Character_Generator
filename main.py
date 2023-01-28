@@ -1,15 +1,27 @@
 from Warhammer import *
+import sys
+from PySide6.QtUiTools import QUiLoader
+from PySide6.QtWidgets import QApplication
+from PySide6.QtCore import QFile, QIODevice
+
 lista = Warhammer.Initialize.load_weapons()
 
-#for x in lista: tak można znaleźć coś w liście obiektów
-#    if "Rapier" in x.name:
-#        print(lista.index(x))
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    ui_file_name = "maingui.ui"
+    ui_file = QFile(ui_file_name)
+    if not ui_file.open(QIODevice.ReadOnly):
+        print(f"Cannot open {ui_file_name}: {ui_file.errorString()}")
+        sys.exit(-1)
+    loader = QUiLoader()
+    window = loader.load(ui_file)
+    ui_file.close()
+    if not window:
+        print(loader.errorString())
+        sys.exit(-1)
+    window.show()
+    app.exec()
 
-#hero = Warhammer.Hero.Hero("Bartek", "Niziołek", "Szlachcic", "Mężczyzna", "Cos", "Cos", "Cos", lista[0] , lista[1])
 
-#print(hero)
+hero = Warhammer.Hero.Hero("Bartek", "Niziołek", "Szlachcic", "Mężczyzna", "Cos", "Cos", "Cos", lista[0] , lista[1])
 
-lista_broni_szlachic = [5,7,9]
-
-for x in lista_broni_szlachic:
-    print(lista[x])
