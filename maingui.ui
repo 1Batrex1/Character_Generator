@@ -138,8 +138,8 @@
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>10</y>
+      <x>-10</x>
+      <y>20</y>
       <width>841</width>
       <height>511</height>
      </rect>
