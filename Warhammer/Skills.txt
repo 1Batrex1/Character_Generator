@@ -39,3 +39,5 @@ Zastraszanie; podstawowa; Krzepa
 Znajomość języka; zaawansowana; Inteligencja
 Zwinne palce; zaawansowana; Zręczność
 Żeglarstwo; zaawansowana; Zręczność
+Leczenie; zaawansowana; Inteligencja
+Nauka; zaawansowana; Inteligencja

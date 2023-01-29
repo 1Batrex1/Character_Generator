@@ -63,3 +63,10 @@ Sztaba metalu ;25s ;20 ;mała
 Wnyki ;2zk ;20 ;przeciętna
 Wytrychy ;10zk ;20 ;mała
 Zestaw do charakteryzacji ;5zk ;10 ;sporadyczna
+Hełm skórzany; 3zk; 10; przeciętna
+Kaftan skórzany; 6zk; 40; przeciętna
+Kurta skórzana; 12zk; 50; przeciętna
+Nogawice skórzane; 10zk; 20; przeciętna
+Skórznia; 25zk; 80; mała
+-; -; -; -
+Kaftan kolczy; 60zk; 60; mała

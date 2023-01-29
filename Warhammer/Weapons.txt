@@ -37,3 +37,4 @@ Rusznica;	Palna;	48;	4;	Druzgoczący, Zawodny
 Rusznica Wielostrzałowa;	Mechaniczna;	48;	4;	Ekspermentalny
 Sieć;	Unieruchamiająca;	8;	/;	Unieruchamiający
 Topór do rzucania;	Rzucana;	8;	S-2;	Brak
+-; -; -; -; -

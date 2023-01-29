@@ -1,4 +1,5 @@
 import Initialize
+from os import getcwd
 
 class Profession:
 
@@ -30,5 +31,34 @@ class Profession:
 
         for x in self.talents_id:
             self.talents.append(talentstemp[x])
+
+
+
+def lista_profesji(filename = getcwd()+"/Warhammer/Professions.txt"):
+    profession_list = []
+    with open(filename, encoding="utf8") as f:
+        for line in f:
+            pola = line.strip("\t").split(";")
+            bronie = pola[1].strip(" ").split(",")
+            itemy = pola[2].strip(" ").split(",")
+            skille = pola[3].strip(" ").split(",")
+            talenty = pola[4].strip(" ").split(",")
+
+            for x in range(0, len(bronie)):
+                bronie[x] = int(bronie[x])
+
+            for x in range(0, len(itemy)):
+                itemy[x] = int(itemy[x])
+
+            for x in range(0, len(skille)):
+                skille[x] = int(skille[x])
+
+            for x in range(0, len(talenty)):
+                talenty[x] = int(talenty[x])
+
+            s = Profession(pola[0], bronie, itemy, skille, talenty)
+            profession_list.append(s)
+    return profession_list
+
 
 
