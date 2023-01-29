@@ -1,0 +1,41 @@
+Brzuchomówstwo; zaawansowana; Ogłada
+Charakteryzacja; podstawowa; Ogłada
+Gadanina; zaawansowana; Ogłada
+Czytanie i pisanie; zaawansowana; Inteligencja
+Czytanie z warg; zaawansowana; Inteligencja
+Dowodzenie; podstawowa; Ogłada
+Hazard; podstawowa; Inteligencja
+Hipnoza; zaawansowana; Ogłada
+Jeździectwo; podstawowa; Zręczność
+Oswajanie; zaawansowana; Ogłada
+Otwieranie zamków; zaawansowana; Zręczność
+Plotkowanie; podstawowa; Ogłada
+Pływanie; podstawowa; Krzepa
+Powożenie; podstawowa; Krzepa
+Przekonywanie; podstawowa; Ogłada
+Przeszukiwanie; podstawowa; Inteligencja
+Rzemiosło; zaawansowana; Zależne od rodzaju
+Sekretne znaki; zaawansowana; Inteligencja
+Sekretny język; zaawansowana; Inteligencja
+Skradanie Się; podstawowa; Zręczność
+Splatanie magii; zaawansowana; Krzepa
+Spostrzegawczość; podstawowa; Inteligencja
+Sztuka przetrwania; podstawowa; Inteligencja
+Śledzenie; zaawansowana; Zręczność
+Targowanie; podstawowa; Ogłada
+Torturowanie; zaawansowana; Ogłada
+Tresura; zaawansowana; Ogłada
+Tropienie; zaawansowana; Inteligencja
+Ukrywanie się; podstawowa; Zręczność
+Unik; zaawansowana; Zręczność
+Warzenie trucizn; zaawansowana; Inteligencja
+Wiedza; zaawansowana; Inteligencja
+Wioślarstwo; podstawowa; Krzepa
+Wspinaczka; podstawowa; Krzepa
+Wycena; podstawowa; Inteligencja
+Wykrywanie magii; zaawansowana;
+Zastawianie pułapek; zaawansowana; Zręczność
+Zastraszanie; podstawowa; Krzepa
+Znajomość języka; zaawansowana; Inteligencja
+Zwinne palce; zaawansowana; Zręczność
+Żeglarstwo; zaawansowana; Zręczność
