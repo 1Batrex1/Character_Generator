@@ -14,7 +14,7 @@ Chirurgia
 Chodu!
 Czarnoksięstwo
 Człowiek-guma
-Czuły sluch
+Czuły słuch
 Dotyk mocy
 Etykieta
 Geniusz arytmetyczny
@@ -64,7 +64,7 @@ Strzał przebijający
 Strzelec wyborowy 
 Szal bojowy 
 Szczęście
-Szósty zmysl
+Szósty zmysł
 Szybki refleks 
 Szybkie wyciągnięcie 
 Talent artystyczny
