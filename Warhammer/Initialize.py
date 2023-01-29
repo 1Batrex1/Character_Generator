@@ -3,7 +3,7 @@ from Warhammer.Eq import Eq
 from Warhammer.Skill import Skill
 from Warhammer.Talent import Talent
 from os import getcwd
-def load_weapons(filename):
+def load_weapons(filename  = getcwd()+"/Warhammer/Weapons.txt"):
     weapons = []
     print()
     with open(filename, encoding="utf8") as f:
@@ -15,7 +15,7 @@ def load_weapons(filename):
     return weapons
 
 
-def load_items(filename):
+def load_items(filename = getcwd()+"/Warhammer/Items.txt"):
     items = []
 
     with open(filename, encoding="utf8") as f:
@@ -26,7 +26,7 @@ def load_items(filename):
     return items
 
 
-def load_skills(filename):
+def load_skills(filename = getcwd()+"/Warhammer/Skills.txt"):
     skills = []
     with open(filename, encoding="utf8") as f:
         for line in f:
@@ -36,7 +36,7 @@ def load_skills(filename):
     return skills
 
 
-def load_talents(filename):
+def load_talents(filename = getcwd()+"/Warhammer/Talents.txt"):
     talents = []
     with open(filename, encoding="utf8") as f:
         for line in f:
