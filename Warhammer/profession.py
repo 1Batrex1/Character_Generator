@@ -1,4 +1,4 @@
-import Initialize
+import Warhammer.Initialize as Initialize
 from os import getcwd
 
 
