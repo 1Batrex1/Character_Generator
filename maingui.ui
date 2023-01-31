@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>812</width>
-    <height>570</height>
+    <height>749</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -96,37 +96,11 @@
      <string>Wybierz płeć</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QPushButton" name="Generator">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>286</y>
-      <width>221</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Kobieta</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_2">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>290</y>
-      <width>191</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Mężczyzna</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>380</y>
+      <x>230</x>
+      <y>440</y>
       <width>311</width>
       <height>101</height>
      </rect>
@@ -138,10 +112,10 @@
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
      <rect>
-      <x>-10</x>
-      <y>20</y>
+      <x>700</x>
+      <y>0</y>
       <width>841</width>
-      <height>511</height>
+      <height>561</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -156,7 +130,7 @@
        <x>0</x>
        <y>0</y>
        <width>841</width>
-       <height>511</height>
+       <height>561</height>
       </rect>
      </property>
      <widget class="QPushButton" name="Butt1">
@@ -211,7 +185,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QGroupBox" name="rasy">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -294,7 +268,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_2">
+   <widget class="QGroupBox" name="plcie">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -303,20 +277,80 @@
       <height>71</height>
      </rect>
     </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
     <property name="title">
      <string>GroupBox</string>
     </property>
+    <widget class="QRadioButton" name="Chlop">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>0</y>
+       <width>191</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mężczyzna</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Baba">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>211</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Kobieta</string>
+     </property>
+    </widget>
    </widget>
-   <zorder>groupBox</zorder>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>360</y>
+      <width>241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Wybierz profesję</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Wynik">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>580</y>
+      <width>611</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>plcie</zorder>
+   <zorder>rasy</zorder>
    <zorder>Imie</zorder>
    <zorder>Imie_2</zorder>
    <zorder>Rasa</zorder>
    <zorder>label</zorder>
-   <zorder>radioButton</zorder>
-   <zorder>radioButton_2</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>Generator</zorder>
    <zorder>scrollArea</zorder>
-   <zorder>groupBox_2</zorder>
+   <zorder>Wynik</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -348,12 +382,12 @@
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>145</x>
-     <y>126</y>
+     <x>894</x>
+     <y>156</y>
     </hint>
     <hint type="destinationlabel">
-     <x>385</x>
-     <y>41</y>
+     <x>1134</x>
+     <y>71</y>
     </hint>
    </hints>
   </connection>
@@ -364,12 +398,12 @@
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>145</x>
-     <y>126</y>
+     <x>894</x>
+     <y>156</y>
     </hint>
     <hint type="destinationlabel">
-     <x>415</x>
-     <y>131</y>
+     <x>1164</x>
+     <y>161</y>
     </hint>
    </hints>
   </connection>
@@ -380,12 +414,12 @@
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>145</x>
-     <y>126</y>
+     <x>894</x>
+     <y>156</y>
     </hint>
     <hint type="destinationlabel">
-     <x>145</x>
-     <y>126</y>
+     <x>894</x>
+     <y>156</y>
     </hint>
    </hints>
   </connection>
@@ -396,12 +430,12 @@
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>214</x>
-     <y>110</y>
+     <x>963</x>
+     <y>140</y>
     </hint>
     <hint type="destinationlabel">
-     <x>300</x>
-     <y>294</y>
+     <x>1050</x>
+     <y>325</y>
     </hint>
    </hints>
   </connection>
