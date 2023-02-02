@@ -1,4 +1,5 @@
 import random
+from screeninfo import get_monitors
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Warhammer import *
@@ -14,7 +15,7 @@ class Dialog(QtWidgets.QDialog):
         self.herotext.setText(hero.__str__())
         self.button = QtWidgets.QPushButton("OK")
         self.button.clicked.connect(self.accept)
-        self.resize(300, 1000)
+        self.resize(int(get_monitors()[0].width*0.30), int(get_monitors()[0].height*0.85))
         self.layout.addWidget(self.herotext)
         self.layout.addWidget(self.button)
         self.setLayout(self.layout)
@@ -23,7 +24,7 @@ class Dialog(QtWidgets.QDialog):
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(812, 749)
+        MainWindow.resize(int(get_monitors()[0].width*0.45), int(get_monitors()[0].height*0.70))
         MainWindow.setAutoFillBackground(False)
         MainWindow.setTabShape(QtWidgets.QTabWidget.Triangular)
         MainWindow.setUnifiedTitleAndToolBarOnMac(False)
