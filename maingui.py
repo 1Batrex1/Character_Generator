@@ -166,12 +166,16 @@ class Ui_MainWindow(object):
             return "Człowiek"
         if self.Fuj.isChecked():
             return "Elf"
+        return None
     def Check_gender(self):
         if self.Chlop.isChecked():
             return "Mężczyzna"
-        return "Kobieta"
+        if self.Baba.isChecked():
+            return "Kobieta"
+        return None
 
     def Hero_Warhammer(self):
+
         skills = Warhammer.Initialize.load_skills()
         talens = Warhammer.Initialize.load_talents()
         professions = Warhammer.Initialize.load_profession()
@@ -181,7 +185,8 @@ class Ui_MainWindow(object):
         race = self.Check_race()
         gender = self.Check_gender()
         prof_id = random.randint(0,4)
-
+        if race is None or gender is None or name == "":
+            return
         hero = Warhammer.Hero.Hero(name, race, professions[prof_id].name, gender, professions[prof_id].skills,
                                    professions[prof_id].talents, professions[prof_id].items,professions[prof_id].weapons)
         self.Wynik.setText(hero.__str__())
