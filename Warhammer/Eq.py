@@ -6,5 +6,6 @@ class Eq:
 
     def GetEq(self):
         return self.name + self.description
+
     def __str__(self):
         return self.name + self.description

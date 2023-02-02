@@ -3,6 +3,7 @@ import random
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Warhammer import *
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -167,6 +168,7 @@ class Ui_MainWindow(object):
         if self.Fuj.isChecked():
             return "Elf"
         return None
+
     def Check_gender(self):
         if self.Chlop.isChecked():
             return "Mężczyzna"
@@ -184,10 +186,10 @@ class Ui_MainWindow(object):
         name = self.Imie_2.toPlainText()
         race = self.Check_race()
         gender = self.Check_gender()
-        prof_id = random.randint(0,4)
+        prof_id = random.randint(0, 4)
         if race is None or gender is None or name == "":
             return
         hero = Warhammer.Hero.Hero(name, race, professions[prof_id].name, gender, professions[prof_id].skills,
-                                   professions[prof_id].talents, professions[prof_id].items,professions[prof_id].weapons)
+                                   professions[prof_id].talents, professions[prof_id].items,
+                                   professions[prof_id].weapons)
         self.Wynik.setText(hero.__str__())
-
