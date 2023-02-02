@@ -4,6 +4,22 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from Warhammer import *
 
 
+class Dialog(QtWidgets.QDialog):
+
+    def __init__(self, hero):
+        super().__init__()
+        self.setWindowTitle("Twój Bohater")
+        self.layout = QtWidgets.QVBoxLayout()
+        self.herotext = QtWidgets.QTextEdit()
+        self.herotext.setText(hero.__str__())
+        self.button = QtWidgets.QPushButton("OK")
+        self.button.clicked.connect(self.accept)
+        self.resize(300, 1000)
+        self.layout.addWidget(self.herotext)
+        self.layout.addWidget(self.button)
+        self.setLayout(self.layout)
+
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -192,4 +208,5 @@ class Ui_MainWindow(object):
         hero = Warhammer.Hero.Hero(name, race, professions[prof_id].name, gender, professions[prof_id].skills,
                                    professions[prof_id].talents, professions[prof_id].items,
                                    professions[prof_id].weapons)
-        self.Wynik.setText(hero.__str__())
+        dial = Dialog(hero)
+        dial.exec_()
