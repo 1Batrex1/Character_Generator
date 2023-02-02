@@ -11,10 +11,10 @@ class Profession:
         self.skills_id = skills_id_list  # 3,6,8;
         self.talents_id = talents_id_list  # 3,5,6;
 
-        itemstemp = Initialize.load_items("Items.txt")
-        weaponstemp = Initialize.load_weapons("Weapons.txt")
-        skillstemp = Initialize.load_skills("Skills.txt")
-        talentstemp = Initialize.load_talents("Talents.txt")
+        itemstemp = Initialize.load_items()
+        weaponstemp = Initialize.load_weapons()
+        skillstemp = Initialize.load_skills()
+        talentstemp = Initialize.load_talents()
 
         self.items = []
         self.weapons = []

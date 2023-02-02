@@ -1,4 +1,8 @@
+import random
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+from Warhammer import *
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -118,10 +122,10 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.Butt1.clicked.connect(self.SystemSelektor.hide) # type: ignore
-        self.Butt1.clicked.connect(self.Butt2.hide) # type: ignore
-        self.Butt1.clicked.connect(self.Butt1.hide) # type: ignore
-        self.Butt1.clicked.connect(self.scrollArea.hide) # type: ignore
+        self.Butt1.clicked.connect(self.SystemSelektor.hide)  # type: ignore
+        self.Butt1.clicked.connect(self.Butt2.hide)  # type: ignore
+        self.Butt1.clicked.connect(self.Butt1.hide)  # type: ignore
+        self.Butt1.clicked.connect(self.scrollArea.hide)  # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         MainWindow.setTabOrder(self.Butt1, self.Kras)
         MainWindow.setTabOrder(self.Kras, self.Butt2)
@@ -130,8 +134,7 @@ class Ui_MainWindow(object):
         MainWindow.setTabOrder(self.LilBoy, self.Fuj)
         MainWindow.setTabOrder(self.Fuj, self.Lud)
 
-
-
+        self.Generator.clicked.connect(self.Hero_Warhammer)  # TU będzie generacja
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -153,3 +156,33 @@ class Ui_MainWindow(object):
         self.Baba.setText(_translate("MainWindow", "Kobieta"))
         self.label_2.setText(_translate("MainWindow", "Wybierz profesję"))
         self.Wynik.setText(_translate("MainWindow", "TextLabel"))
+
+    def Check_race(self):
+        if self.Kras.isChecked():
+            return "Krasnolud"
+        if self.LilBoy.isChecked():
+            return "Niziołek"
+        if self.Lud.isChecked():
+            return "Człowiek"
+        if self.Fuj.isChecked():
+            return "Elf"
+    def Check_gender(self):
+        if self.Chlop.isChecked():
+            return "Mężczyzna"
+        return "Kobieta"
+
+    def Hero_Warhammer(self):
+        skills = Warhammer.Initialize.load_skills()
+        talens = Warhammer.Initialize.load_talents()
+        professions = Warhammer.Initialize.load_profession()
+        weapons = Warhammer.Initialize.load_weapons()
+        items = Warhammer.Initialize.load_items()
+        name = self.Imie_2.toPlainText()
+        race = self.Check_race()
+        gender = self.Check_gender()
+        prof_id = random.randint(0,4)
+
+        hero = Warhammer.Hero.Hero(name, race, professions[prof_id].name, gender, professions[prof_id].skills,
+                                   professions[prof_id].talents, professions[prof_id].items,professions[prof_id].weapons)
+        self.Wynik.setText(hero.__str__())
+

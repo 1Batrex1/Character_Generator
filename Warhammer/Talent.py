@@ -5,3 +5,5 @@ class Talent:
 
     def GetTalent(self):
         return self.name + self.description
+    def __str__(self):
+        return self.name + self.description

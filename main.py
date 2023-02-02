@@ -1,6 +1,6 @@
+from Warhammer import *
 from maingui import *
-
-
+import sys
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -9,7 +9,6 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 if __name__ == '__main__':
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
     window.show()

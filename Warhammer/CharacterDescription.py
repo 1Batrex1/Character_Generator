@@ -5,6 +5,7 @@ class CharacterDescription:
     def __init__(self, gender, race):
         age_rand = random.randint(1, 100)
         waga_rand = random.randint(1, 100)
+        self.age = 0
         # losowanie wagi
         if race == "Człowiek":
             if waga_rand == 1:

@@ -6,3 +6,6 @@ class Skill:
 
     def getSkill(self):
         return self.name + self.spec1 + self.spec2
+
+    def __str__(self):
+        return self.name + self.spec1 + self.spec2
