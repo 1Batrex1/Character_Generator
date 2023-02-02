@@ -27,7 +27,7 @@ class Hero:
             ski += str(x)
         tal = ""
         for x in self.Tal:
-            tal = str(x)
+            tal += str(x)
         eq = ""
         for x in self.Eq:
             eq += str(x) + "\n"
