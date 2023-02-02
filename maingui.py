@@ -1,10 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(812, 594)
+        MainWindow.resize(812, 749)
         MainWindow.setAutoFillBackground(False)
         MainWindow.setTabShape(QtWidgets.QTabWidget.Triangular)
         MainWindow.setUnifiedTitleAndToolBarOnMac(False)
@@ -34,16 +32,16 @@ class Ui_MainWindow(object):
         font.setPointSize(22)
         self.label.setFont(font)
         self.label.setObjectName("label")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(230, 440, 311, 101))
-        self.pushButton.setObjectName("pushButton")
+        self.Generator = QtWidgets.QPushButton(self.centralwidget)
+        self.Generator.setGeometry(QtCore.QRect(230, 440, 311, 101))
+        self.Generator.setObjectName("Generator")
         self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
-        self.scrollArea.setGeometry(QtCore.QRect(0, 10, 841, 561))
+        self.scrollArea.setGeometry(QtCore.QRect(-10, 10, 841, 691))
         self.scrollArea.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 841, 561))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 841, 691))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.Butt1 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
         self.Butt1.setGeometry(QtCore.QRect(30, 60, 251, 71))
@@ -97,6 +95,10 @@ class Ui_MainWindow(object):
         font.setPointSize(22)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
+        self.Wynik = QtWidgets.QLabel(self.centralwidget)
+        self.Wynik.setGeometry(QtCore.QRect(90, 580, 611, 91))
+        self.Wynik.setObjectName("Wynik")
+        self.Wynik.raise_()
         self.label_2.raise_()
         self.plcie.raise_()
         self.rasy.raise_()
@@ -104,7 +106,7 @@ class Ui_MainWindow(object):
         self.Imie_2.raise_()
         self.Rasa.raise_()
         self.label.raise_()
-        self.pushButton.raise_()
+        self.Generator.raise_()
         self.scrollArea.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -128,13 +130,16 @@ class Ui_MainWindow(object):
         MainWindow.setTabOrder(self.LilBoy, self.Fuj)
         MainWindow.setTabOrder(self.Fuj, self.Lud)
 
+
+
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.Imie.setText(_translate("MainWindow", "Podaj imię postaci"))
         self.Rasa.setText(_translate("MainWindow", "Wybierz rasę"))
         self.label.setText(_translate("MainWindow", "Wybierz płeć"))
-        self.pushButton.setText(_translate("MainWindow", "Generuj Postać"))
+        self.Generator.setText(_translate("MainWindow", "Generuj Postać"))
         self.Butt1.setText(_translate("MainWindow", "Warhammer"))
         self.SystemSelektor.setText(_translate("MainWindow", "Wybierz System"))
         self.Butt2.setText(_translate("MainWindow", "Zew Cthulhu"))
@@ -147,13 +152,4 @@ class Ui_MainWindow(object):
         self.Chlop.setText(_translate("MainWindow", "Mężczyzna"))
         self.Baba.setText(_translate("MainWindow", "Kobieta"))
         self.label_2.setText(_translate("MainWindow", "Wybierz profesję"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+        self.Wynik.setText(_translate("MainWindow", "TextLabel"))

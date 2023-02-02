@@ -5,17 +5,20 @@ from Warhammer.specialTraits import *
 
 class Hero:
 
-    def __init__(self, name, race, profession, gender, Ski, Tal, Eq, *Wep):
+    def __init__(self, name, race, profession, gender, Ski, Tal, Eq, Wep):
         self.name = name
         self.race = race
         self.profession = profession
         self.Chad = CharacterDescription(gender, self.race)
         self.st = SpecialTraits(self.race)
         self.wep = []  # Tabela Broni
+        self.wep.append(Wep)
         self.Ski = []  # Tabela skili
         self.Tal = []  # Tabela Talentów
         self.Eq = []  # Tabela eq
         self.Money = Money()
+
+
 
     def __str__(self):
         wep = ""
